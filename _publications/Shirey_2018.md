@@ -5,7 +5,7 @@ permalink: /publication/Shirey_2018
 excerpt: ''
 date: 2018/10/03
 venue: 'Biodiversity Data Journal'
-paperurl: 'http://academicpages.github.io/files/Shirey_2018.pdf'
+paperurl: 'http://vmshirey.github.io/files/Shirey_2018.pdf'
 citation: 'Shirey, V. (2018). &quot;Visualizing natural history collection data provides insight into collection development and bias.&quot; <i>Biodiversity Data Journal</i>. 6.'
 ---
 
