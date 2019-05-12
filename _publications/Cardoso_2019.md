@@ -1,15 +1,14 @@
 ---
-title: "Paper Title Number 2"
+title: "Globally distributed occurrences utilised in 200 spider species conservation profiles (Arachnida, Araneae)"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/Cardoso_2019
+excerpt: ''
+date: 2019
+venue: 'Biodiversity Data Journal'
+paperurl: 'http://academicpages.github.io/files/Cardoso_2019.pdf'
+citation: 'Cardoso, P., Shirey, V., Seppälä, S., Henriques, S., Draney, M., Ford, S., Gibbons, A., Gomez, L., Kariko, S., Malumbres-Olarte, J., Milne, M., Vink, C. (2019). &quot;Globally distributed occurrences utilised in 200 spider species conservation profiles (Arachnida, Araneae).&quot; <i>Biodiversity Data Journal</i>. 7(e33264).'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+[Download paper here](http://academicpages.github.io/files/Cardoso_2019.pdf)
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+Recommended citation: Cardoso, P., Shirey, V., Seppälä, S., Henriques, S., Draney, M., Ford, S., Gibbons, A., Gomez, L., Kariko, S., Malumbres-Olarte, J., Milne, M., Vink, C. (2019). &quot;Globally distributed occurrences utilised in 200 spider species conservation profiles (Arachnida, Araneae).&quot; <i>Biodiversity Data Journal</i>. 7(e33264)..
