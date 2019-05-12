@@ -6,7 +6,7 @@ excerpt: ''
 date: 2018/10/03
 venue: 'Biodiversity Data Journal'
 paperurl: 'http://academicpages.github.io/files/Shirey_2018.pdf'
-citation: 'Shirey, V. (2018). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: 'Shirey, V. (2018). &quot;Visualizing natural history collection data provides insight into collection development and bias.&quot; <i>Biodiversity Data Journal</i>. 6.'
 ---
 
-[Download paper here](http://academicpages.github.io/files/Shirey_2018.pdf)
+[Download paper here](http://vmshirey.github.io/files/Shirey_2018.pdf)
