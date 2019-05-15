@@ -45,21 +45,21 @@ Skills
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Cardoso, P., Shirey, V., Seppälä, S., Henriques, S., Draney, M., Foord, S., ... (2019). "Globally distributed occurrences utilised in 200 spider species conservation profiles (Arachnida, Araneae)." Biodiversity Data Journal. 7(e33264). [Download](https://vmshirey.github.io/files/Cardoso_2019.pdf)
+
+
+Seltmann, K., Lafia, S., Paul, D.L., James, S.A., Bloom, D., ... Shirey, V., ... (2019). "Georeferencing for Research Use (GRU): An integrated geospatial training paradigm for biocollections researchers and data providers." Research Ideas and Outcomes 4(e32449) [Download](https://vmshirey.github.io/files/Seltmann_2019.pdf)
+
+
+Shirey, V. (2018). "Visualizing natural history collection data provides insight into collection development and bias." Biodiversity Data Journal. 6. [Download](https://vmshirey.github.io/files/Shirey_2019.pdf)
   
 Talks
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+
   
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+
   
 Service and leadership
 ======
