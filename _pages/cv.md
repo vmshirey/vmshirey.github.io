@@ -13,6 +13,7 @@ Education
 ======
 * Ph.D in Biology, Georgetown University, 2023 (expected)
 	* Concentration in Ecology, Evolution, and Animal Behavior
+	* Tentative Thesis: "The evolutionary ecology of high-latitude butterflies in the context of past, present, and future climate change." - Advised by Dr. Leslie Ries
 * B.S. in Environmental Science, Drexel University, 2017
 	* Concentration in Evolution & Biodiversity
 	* Minors in Bioinformatics and Sustainability in the Built Environment
