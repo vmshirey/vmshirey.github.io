@@ -37,6 +37,10 @@ Work experience
 Skills
 ======
 * Proficient in R, Python, C++, Java, JavaScript, HTML, PHP, and SQL
+	* Experience in creating and managing large databases
+	* Experience in a variety of statstical anaylses using R
+	* Experience in natural language processing through Python
+* Proficient knowledge of frequentist statistics, introductory knowledge of Bayesian approaches
 
 Publications
 ======
