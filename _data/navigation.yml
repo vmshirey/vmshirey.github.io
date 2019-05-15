@@ -1,9 +1,6 @@
 # main links links
 main:
     
-  - title: "Current Research"
-    url: /portfolio/
-    
   - title: "CV"
     url: /cv/
 
