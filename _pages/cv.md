@@ -50,7 +50,7 @@ Skills
 Grants & Awards ($249,000)
 ======
 * National Science Foundation Graduate Research Fellowship (NSF-GRFP) - $138,000
-* Explorers Club Washignton, DC Group - $3,500
+* Explorers Club Washington, DC Group - $3,500
 * Fulbright Finland Study/Research Fellowship - $12,000
 * Udall Campus Nominee, Drexel University
 * Excellence in Undergraduate Research Award, Drexel University - $500
