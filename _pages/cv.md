@@ -47,7 +47,7 @@ Skills
 * Proficient knowledge of frequentist statistics, introductory knowledge of Bayesian approaches
 * Field work: New Jersey Pine Barrens, Yukon Territory (CAFN)
 
-Grants & Awards
+Grants & Awards ($249,000)
 ======
 * National Science Foundation Graduate Research Fellowship (NSF-GRFP) - $138,000
 * Explorers Club Washignton, DC Group - $3,500
