@@ -15,7 +15,7 @@ infrastructure.
 
 Before starting my degree at Georgetown, I was a Fulbright Study/Research Fellow to The Finnish Museum of Natural History -
 University of Helsinki in Finland under the mentorship of Dr. Pedro Cardoso in the <a href="http://biodiversityresearch.org/"
-target = "_blank"> Laboratory for Integrative Biodiversity Research (LIBRe) </a>. There I worked on several projects including
+target = "_blank"> Laboratory for Integrative Biodiversity Research (LIBRe)</a>. There I worked on several projects including
 understanding how digital biodiversity data informs spider conservation profiles and how aggregate biodiversity information
 may be biased spatially and functionally. 
 
