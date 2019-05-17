@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Biology, Georgetown University, 2023 (expected)
+* Ph.D. in Biology, Georgetown University, 2023 (expected)
 	* Concentration in Ecology, Evolution, and Animal Behavior
 	* Tentative Thesis: *"The evolutionary ecology of high-latitude butterflies in the context of past, present, and future climate change."*
 		* Committee: [Leslie Ries](https://www.butterflyinformatics.org/person/leslie-ries) (advisor); [Gina Wimp](https://www.wimplab.org/) (Georgetown University); [Martha Weiss](https://www.weisslab.org/) (Georgetown University);
