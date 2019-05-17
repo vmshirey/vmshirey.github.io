@@ -15,7 +15,7 @@ Education
 	* Concentration in Ecology, Evolution, and Animal Behavior
 	* Tentative Thesis: *"The evolutionary ecology of high-latitude butterflies in the context of past, present, and future climate change."*
 		* Committee: [Leslie Ries](https://www.butterflyinformatics.org/person/leslie-ries) (advisor); [Gina Wimp](https://www.wimplab.org/) (Georgetown University); [Martha Weiss](https://www.weisslab.org/) (Georgetown University);
-* Audited M.Sc. Coursework, University of Helsink (2017)
+* Audited M.Sc. Coursework, University of Helsinki (2017)
 	* High Dimensional Statistics (Faculty of Mathematics)
 * B.S. in Environmental Science, Drexel University, 2017
 	* Concentration in Evolution & Biodiversity
