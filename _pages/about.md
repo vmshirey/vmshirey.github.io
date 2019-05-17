@@ -20,6 +20,6 @@ understanding how digital biodiversity data informs spider conservation profiles
 may be biased spatially and functionally. 
 
 My research career started at The Academy of Natural Sciences of Drexel University, the oldest natural history museum in the Western
-Hemisphere. There I was mentored by Dr. Jon Gelhaus, curator of the Entomology Department where my research focused on describing a new
-species of crane fly (Diptera: Tipulidae) alongside collection physical and digital curation. I was co-mentored by Steven Dilliplane on
+Hemisphere. There I was mentored by Dr. Jon Gelhaus, curator of the Entomology Department, where my research focused on describing a new
+species of crane fly (Diptera: Tipulidae) alongside assisting with physical and digital curation of the collection. I was co-mentored by Steven Dilliplane on
 biodiversity informatics projects including the management of large biodiversity databases.
