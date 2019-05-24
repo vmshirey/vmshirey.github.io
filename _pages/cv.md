@@ -19,7 +19,7 @@ Education
 * Ph.D. in Biology, Georgetown University, 2023 (expected)
 	* Concentration in Ecology, Evolution, and Animal Behavior
 	* Tentative Thesis: *"The evolutionary ecology of high-latitude butterflies in the context of past, present, and future climate change."*
-		* Committee: [Leslie Ries](https://scholar.google.com/citations?user=i1sIWUkAAAAJ&hl=en&oi=ao) (advisor); [Martha Weiss](https://scholar.google.com/citations?user=NLfN7Q4AAAAJ&hl=en&oi=ao) (Committee Chair, Georgetown University); [Gina Wimp](https://scholar.google.com/citations?user=IBm-zuAAAAAJ&hl=en&oi=ao) (Georgetown University);
+		* Committee: [Leslie Ries](https://scholar.google.com/citations?user=i1sIWUkAAAAJ&hl=en&oi=ao) (advisor); [Martha Weiss](https://scholar.google.com/citations?user=NLfN7Q4AAAAJ&hl=en&oi=ao) (committee chair, Georgetown University); [Gina Wimp](https://scholar.google.com/citations?user=IBm-zuAAAAAJ&hl=en&oi=ao) (Georgetown University);
 * Audited M.Sc. Coursework, University of Helsinki (2017)
 	* High Dimensional Statistics (Faculty of Mathematics)
 * B.S. in Environmental Science, Drexel University, 2017
