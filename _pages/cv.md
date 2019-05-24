@@ -68,7 +68,7 @@ Seltmann, K., Lafia, S., Paul, D.L., James, S.A., Bloom, D., ... **Shirey, V.**,
   
 Talks & Presentations
 ======
-Mason, S., **Shirey, V.**, Ponisio, L., Gelhaus, J. “A Meta-analysis of Fire Effects on Bees.” Ecological Society of America 2019. Presentation.
+Mason, S., **Shirey, V.**, Ponisio, L., Gelhaus, J. “A Meta-analysis of Fire Effects on Bees.” Ecological Society of America 2019. Fall 2019. Invited Presentation.
 
 **Shirey, V.**, Ries, L. “Challenges in developing a knowledge model for butterfly habitats via information extracted from field guides: An ecologist’s perspective.” NASKO 2019: Knowledge Organization: Community and Computation. Summer 2019. Presentation.
 
