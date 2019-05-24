@@ -12,6 +12,7 @@ redirect_from:
 Research Summary
 ======
 My research interest focuses largely on the evolutionary ecology of insect taxa, biodiversity informatics, and biological information storage and retrieval.
+I am particularly interested in trait-based approaches to answering questions in evolution and ecology with respect to climate change and biodiversity loss.
 
 Education
 ======
