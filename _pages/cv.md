@@ -101,4 +101,4 @@ TBD
 Service and leadership
 ======
 * Bargaining/Organizing Committe Member, Georgetown Alliance of Graduate Employees (2018 - Present)
-* Review Activity: PLoSOne (1);
+* Review Activity: PLOSOne (1);
