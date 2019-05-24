@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+Research Summary
+======
+My research interest focuses largely on the evolutionary ecology of insect taxa, biodiversity informatics, and biological information storage and retrieval.
+
 Education
 ======
 * Ph.D. in Biology, Georgetown University, 2023 (expected)
