@@ -15,12 +15,12 @@ extract this information for downstream use.
 
 Ecological Knowledge Organization & Distribution
 ======
-![snow and ice loss](../images/yukon_gif_timestamp.gif "Snow/Ice Loss in CAFN, Canada")Information extracted from literature needs to be standardized and represented in ways that are meaningful for analysis and interpretation. I am interested in how to represent complex natural language data as potential variables
+Information extracted from literature needs to be standardized and represented in ways that are meaningful for analysis and interpretation. I am interested in how to represent complex natural language data as potential variables
 for analysis, including the representation of complex traits such as habitat by biotic/abiotic qualities.
 
 High-latitude Butterfly Ecology & Evolution
 ======
-High-latitude, subarctic and arctic habitats are increasingly threatened by climate change at a rate far faster than other regions. Understanding the evolution of buterfly lineages into these challenging habitats and predicting 
+![snow and ice loss](../images/yukon_gif_timestamp.gif "Snow/Ice Loss in CAFN, Canada")High-latitude, subarctic and arctic habitats are increasingly threatened by climate change at a rate far faster than other regions. Understanding the evolution of buterfly lineages into these challenging habitats and predicting 
 their responses to climate change will be critical for identifying potential refugia and developing conservation priorities.
 
 
