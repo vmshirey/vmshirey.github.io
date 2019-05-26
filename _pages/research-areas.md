@@ -15,7 +15,7 @@ extract this information for downstream use.
 
 Ecological Knowledge Organization & Distribution
 ======
-Information extracted from literature needs to be standardized and represented in ways that are meaningful for analysis and interpretation. I am interested in how to represent complex natural language data as potential variables
+![snow and ice loss](../images/yukon_gif_timestamp.gif "Snow/Ice Loss in CAFN, Canada")Information extracted from literature needs to be standardized and represented in ways that are meaningful for analysis and interpretation. I am interested in how to represent complex natural language data as potential variables
 for analysis, including the representation of complex traits such as habitat by biotic/abiotic qualities.
 
 High-latitude Butterfly Ecology & Evolution
