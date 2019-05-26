@@ -22,7 +22,7 @@ High-latitude Butterfly Ecology & Evolution
 ======
 
 |<img src="../images/yukon_gif_timestamp.gif" width="300">|High-latitude, subarctic and arctic habitats are increasingly threatened by climate change at a rate far faster than other regions. Understanding the evolution of buterfly lineages into these challenging habitats and predicting their responses to climate change will be critical for identifying potential refugia and developing conservation priorities.|
-|---|---|
+|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 
