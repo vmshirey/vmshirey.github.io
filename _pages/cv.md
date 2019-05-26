@@ -101,7 +101,9 @@ Waits, A., **Shirey, V.** “An American Phenomenon: Marching Bands.” Universi
 
 Teaching
 ======
-TBD
+Spring 2020 Teaching Fellowship - BIOL 368, Global Climate Change Ecology
+
+Fall 2019 Teaching Fellowship - BIOL 180, Ecology
   
 Service and leadership
 ======
