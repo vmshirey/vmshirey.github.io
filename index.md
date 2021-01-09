@@ -4,6 +4,7 @@ layout: default
 
 Hi there and welcome to this landing page about me! I am a current PhD candidate in the Department of Biology at Georgetown University, working with Dr. Leslie Ries on detecting signals of butterfly biodiversity change in sparsely sampled regions, namely North American boreal forests and tundra.
 
+My research interests include the use of digital biodiversity data, historical documentation, and hierarchical models for making inferences about ecological change over time, especially if that change may be tied to anthropogenic forces.
 # Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
