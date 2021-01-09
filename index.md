@@ -2,13 +2,7 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Hi there and welcome to this landing page about me! I am a current PhD candidate in the Department of Biology at Georgetown University, working with Dr. Leslie Ries on detecting signals of butterfly biodiversity change in sparsely sampled regions, namely North American boreal forests and tundra.
 
 # Header 1
 
