@@ -1,170 +1,19 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Vaughn M. Shirey</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>Vaughn Shirey</strong><br />
-					Global Change Ecologist <br /></h1>
-				</div>
-			</header>
+---
+layout: main
+---
+{% for post in paginator.posts %}
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+  </div>
+</article>
+{% endfor %}
 
-		<!-- Main -->
-			<div id="main">
-				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About me:</h2>
-						</header>
-						<p>I am a global change ecologist and biodiversity informatics specialist currently working on my PhD in Biology from Georgetown University in Washington, DC. I am supervised by Dr. Leslie Ries and work on questions related to global change impacts on subarctic and arctic butterfly communities and populations in North America.</p>
-						<p>The arctic and subarctic are regions facing some of the most extreme climate change on the planet and insects, especially butterflies, can act as early indicators of broader environmental change. I primarily use Bayesian models, including state-space models, to detect signals of this change from sparse, opportunistic data and data collected from population surveys, museums, and photographs.</p>
-						<ul class="actions">
-							<li><a href="#two" class="button">Current Research</a></li>
-							<li><a href="#four" class="button">Education</a></li>
-							<li><a href="#five" class="button">Grants & Awards</a></li>
-							<li><a href="#three" class="button">Publications</a></li>
-						</ul>
-					</section>
-
-				<!-- Two -->
-					<section id="two">
-					<div id="two"></div>
-						<h2>Current Research</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="fireweed in front of a mountain" /></a>
-								<h3>Macroscale Responses to Global Change</h3>
-								<p>Detecting signals of global change in boreal and tundra butterfly communities using data from museums and community science platforms in tandem with advanced modeling approaches.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="a white butterfly" /></a>
-								<h3>Local/Regional Responses to Global Change</h3>
-								<p>Using targeted field work and museum specimen photographs to assess behavior, morphological variation, and population dynamics of the butterfly <i>Parnassius smintheus</i>.</p>
-							</article>
-						</div>
-					</section>
-
-					<!-- Four -->
-					<section id="four">
-						<header class="major">
-						<div id="four"></div>
-							<h2>Education</h2>
-						</header>
-						<p></p>
-							PhD in Biology (Ecology, Evolution, and Animal Behavior), Georgetown University <br />
-							Thesis Advisor: Dr. Leslie Ries <br />
-							Committee: <ul><li>Dr. Martha Weiss (Georgetown)</li> <li>Dr. Gina Wimp (Georgetown)</li> <li>Dr. Greg Breed (University of Alaska - Fairbanks)</li></ul>
-							
-							BS in Environmental Science (Biodiversity and Evolution), Drexel University <br />
-							Minors in Bioinformatics and Sustainability in the Built Environment <br />
-							Research Advisor: Dr. Jon Gelhaus<br /><br />
-							
-							Other Education: Arctic Winter College 2021 Fellow (The Arctic Institute); Bayesian Modeling with INLA (PR Statistics); High-dimensional Statistics (Univ. of Helsinki)<br />
-					</section>
-					
-					<!-- Five -->
-					<section id="five">
-						<header class="major">
-						<div id="five"></div>
-							<h2>Grants & Awards</h2>
-						</header>
-						<p></p>
-							<h3>2020</h3>
-							<ul>
-								<li>Global Biodiversity Information Facility Young Researchers Award</li>
-							</ul>
-							<h3>2019</h3>
-							<ul>
-								<li>National Science Foundation Graduate Research Fellowship</li>
-								<li>Washington, DC Explorers' Club Fieldwork Grant</li>
-							</ul>
-							<h3>2017</h3>
-							<ul>
-								<li>Fulbright Finland Study/Research Fellowship</li>
-							</ul>
-					</section>
-					
-					<!-- Three -->
-					<section id="three">
-					<div id="three"></div>
-						<h2>Publications</h2>
-						<table style="width: 100%;" >
-							<tbody>
-							<tr>
-								<td></td>
-								<td style="vertical-align:middle">In Press</td>
-								<td>Larsen, E., <b>V. Shirey</b>. 2020. "Method matters: pitfalls in analyzing phenology from occurrence records."</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td style="vertical-align:middle">In Press</td>
-								<td><b>Shirey, V.</b>, A.P.S. Carvalho, A.Y. Kawahara. 2020. "Early evidence for sexually dimorphic, ultraviolet eyespots in <i>Parnassius smintheus</i>, Doubleday, [1847]." The Journal of the Lepidopterists' Society.</td>
-							</tr>
-							<tr>
-								<td style="vertical-align:middle"><span class="__dimensions_badge_embed__" data-doi="10.1111/ecog.05396" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script></td>
-								<td style="vertical-align:middle"><div data-badge-popover="right" data-badge-type="donut" data-doi="10.1111/ecog.05396" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
-								<td><b>Shirey, V.</b>, M. Belitz, V. Barve, R. Guralnick. 2020. "A complete inventory of North American butterfly occurrence data: narrowing data gaps, but increasing bias." Ecography.</td>
-							</tr>
-							<tr>
-								<td style="vertical-align:middle"><span class="__dimensions_badge_embed__" data-doi="10.3897/BDJ.7.e47369" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script></td>
-								<td style="vertical-align:middle"><div data-badge-popover="right" data-badge-type="donut" data-doi="10.3897/BDJ.7.e47369" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
-								<td><b>Shirey, V.</b>, S. Seppälä, V.V. Branco, P. Cardoso. 2019. "Current GBIF occurrence data demonstrates both promise and limitations for potential red listing of spiders." Biodiversity Data Journal. </td>
-							</tr>
-							<tr>
-								<td style="vertical-align:middle"><span class="__dimensions_badge_embed__" data-doi="10.3897/BDJ.7.e33264" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script></td>
-								<td style="vertical-align:middle"><div data-badge-popover="right" data-badge-type="donut" data-doi="10.3897/BDJ.7.e33264" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
-								<td>Cardoso, P.<b>, V. Shirey</b>, et al. 2019. "Globally distributed occurrences utilised in 200 spider species conservation profiles (Arachnida, Araneae)." Biodiversity Data Journal. </td>
-							</tr>
-							<tr>
-								<td style="vertical-align:middle"><span class="__dimensions_badge_embed__" data-doi="10.3897/BDJ.6.e26741" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script></td>
-								<td style="vertical-align:middle"><div data-badge-popover="right" data-badge-type="donut" data-doi="10.3897/BDJ.6.e26741" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
-								<td><b>Shirey, V.</b> 2018. "Visualizing natural history collection data provides insight into collection development and bias." Biodiversity Data Journal. </td>
-							</tr>
-							<tr>
-								<td style="vertical-align:middle"><span class="__dimensions_badge_embed__" data-doi="10.3897/rio.4.e32449" data-style="small_circle"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script></td>
-								<td style="vertical-align:middle"><div data-badge-popover="right" data-badge-type="donut" data-doi="10.3897/rio.4.e32449" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
-								<td>Seltmann, K., S. Lafia, D. Paul, ... <b> V. Shirey</b>, et al. 2018. "Georeferencing for Research Use (GRU): An integrated geospatial training paradigm for biocollections researchers and data providers." Research Ideas and Outcomes.</td>
-							</tr>
-							</tbody>
-						</table>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://twitter.com/ShireyVaughn" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://github.com/vmshirey" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+{% include pagination.html %}
