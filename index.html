@@ -2,343 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Vaughn Shirey | Global Change Ecologist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Poppins", sans-serif
+        }
 
-  <title>Vaughn Shirey | Home</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+        body {
+            font-size: 16px;
+        }
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        .w3-half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer
+        }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyPortfolio - v4.7.0
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+        .w3-half img:hover {
+            opacity: 1
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- ======= Navbar ======= 
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-4">
-          <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="works.html">Scientific Publications</a></li>
-            <li><a href="works.html">Pedagogical Experience</a></li>
-          </ul>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px">Close Menu</a>
+        <div class="w3-container">
+            <h3 class="w3-padding-64"><b>Vaughn Shirey</b></h3>
         </div>
-        <div class="col-md-4 d-none d-md-block">
-          <h3>Work with me:</h3>
-          <p>I'm broadly interested in projects that involve creative analysis on pressing issues in global change ecology. You can get in touch with me
-          via email: <a href="#">vmshirey(at)gmail.com</a></p>
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="publications.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
+            <a href="research.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research</a>
+            <a href="teaching.html" onclick="w3_close()"
+                class="w3-bar-item w3-button w3-hover-white">Teaching/Mentorship</a>
+                <a href="diversity.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Diversity, Equity, and
+                Inclusion</a>
+            <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Full CV</a>
         </div>
-      </div>
+    </nav>
 
-    </div>
-  </div>
-
-  <nav class="navbar navbar-light custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"></a>
-      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
         <span></span>
-      </a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px;background-image: url('../assets/img/p_smi_bw.png');
+  background-repeat: no-repeat;
+  background-position: right 0px bottom 0px;
+  background-size: 25%;
+  padding-left: 0px;" id="showcase">
+            <h1 class="w3-jumbo"><b>Vaughn Shirey</b></h1>
+            <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Global Change Ecologist</b></h1>
+        </div>
+
+        <div class="w3-container" id="services" style="margin-top:25px;background:rgba(255, 255, 255, 0.5);width:65%;">
+            <p>I am a global change ecologist and biodiversity informatics specialist currently working towards a Ph.D. in ecology, evolution, and animal behavior at Georgetown University.
+                My dissertation research focuses on the impacts of anthropogenic climate change on high-latitude butterfly communities and populations. I primarily
+                use museum specimens and citizen science data to reconstruct historical ecologies.</p>
+            <p>I am currently looking for post-doctoral research opportunities beginning in Spring 2023.</p>
+        </div>
+
+        <!-- End page content -->
     </div>
-  </div>
-  </nav> -->
 
-  <main id="main">
-
-    <!-- ======= Works Section ======= -->
-    <section class="section site-portfolio">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-md-12 col-lg-5 mb-4 mb-lg-0">
-            <h2>Vaughn Shirey, PhD Candidate</h2>
-            <p class="mb-0">Global Change Ecologist</p>
-          </div>
-          <div class="col-md-12 col-lg-7 text-start text-lg-end" data-aos="fade-up" data-aos-delay="100">
-            <p class="mb-0">Filter my highlighted work:</p>
-            <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">All</a>
-              <a href="#" data-filter=".bio">Biodiversity+Conservation</a>
-              <a href="#" data-filter=".stat">Informatics+Analysis</a>
-              <a href="#" data-filter=".art">Conceptual+Creative</a>
-            </div>
-          </div>
-        </div>
-        <div class="row mb-6 align-items-center">
-            <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
-            <img class="img-fluid" src="assets/img/profile.png"><hr />
-            <div>
-                <p>Hi there! I am a current PhD candidate and global change ecologist working at Georgetown University in the Ries Lab of Butterfly Informatics.</p>
-                <p>My research focuses on how global climate change is reshaping biodiversity on our planet.</p>
-            </div>
-            </div>
-            <div class="col-md-12 col-lg-9 mb-4 mb-lg-0" data-aos="fade-up">
-                <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-                    <div class="item bio col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <a href="#" class="item-wrap fancybox">
-                            <div class="work-info">
-                                <h3>Ecological Histories of Pattern + Color</h3>
-                                <span>Biodiversity+Conservation</span>
-                            </div>
-                            <img class="img-fluid" src="assets/img/p_smi_bw.png">
-                        </a>
-                    </div>
-                    <div class="item art col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <a href="recon.html" class="item-wrap fancybox">
-                            <div class="work-info">
-                                <h3>Reconciliation for a Tiny Wrestler</h3>
-                                <span>Conceptual+Creative</span>
-                            </div>
-                            <img class="img-fluid" src="assets/img/recon.jpg">
-                        </a>
-                    </div>
-                    <div class="item bio col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <a href="#" class="item-wrap fancybox">
-                            <div class="work-info">
-                                <h3>Historical Ecology + Climate Change</h3>
-                                <span>Biodiversity+Conservation</span>
-                            </div>
-                            <img class="img-fluid" src="assets/img/b_eun.png">
-                        </a>
-                    </div>
-                    <div class="item stat col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <a href="occu.html" class="item-wrap fancybox">
-                            <div class="work-info">
-                                <h3>Occupancy-detection Models + Museum Data</h3>
-                                <span>Informatics+Analysis</span>
-                            </div>
-                            <img class="img-fluid" src="assets/img/occu_main.jpg">
-                        </a>
-                    </div>
-                    <div class="item art col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <a href="#" class="item-wrap fancybox">
-                            <div class="work-info">
-                                <h3>Climate Change Cyanotypes</h3>
-                                <span>Conceptual+Creative</span>
-                            </div>
-                            <img class="img-fluid" src="assets/img/melt.png">
-                        </a>
-                    </div>
-
-                </div>
-            <p align="right">Stay tuned for future updates...</p><br />
-            <div class="row mb-12 align-items-center">
-                <!-- <div class="col-md-12 col-lg-3 text-start text-lg-end">
-                    <p><a href="research.html">Research Overview</a></p>
-                </div>
-                <div class="col-md-12 col-lg-3 text-start text-lg-end">
-                    <p><a href="teaching.html">Teaching Philosophy</a></p>
-                </div>
-                <div class="col-md-12 col-lg-3 text-start text-lg-end">
-                    <p><a href="diversity.html">Diversity Statement</a></p>
-                </div> -->
-                <div class="col-md-12 col-lg-3 text-start text-lg-end">
-                    <p><a href="publications.html">All Publications</a></p>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </section><!-- End  Works Section -->
-
-    <!-- ======= Clients Section =======
-    <section class="section">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-5">
-            <h3 class="h3 heading">My Clients</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4 col-sm-4 col-md-2">
-            <a href="#" class="client-logo"><img src="assets/img/logo-adobe.png" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-2">
-            <a href="#" class="client-logo"><img src="assets/img/logo-uber.png" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-2">
-            <a href="#" class="client-logo"><img src="assets/img/logo-apple.png" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-2">
-            <a href="#" class="client-logo"><img src="assets/img/logo-netflix.png" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-2">
-            <a href="#" class="client-logo"><img src="assets/img/logo-nike.png" alt="Image" class="img-fluid"></a>
-          </div>
-          <div class="col-4 col-sm-4 col-md-2">
-            <a href="#" class="client-logo"><img src="assets/img/logo-google.png" alt="Image" class="img-fluid"></a>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Services Section ======= 
-    <section class="section services">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-4">
-          <div class="col-8">
-            <h3 class="h3 heading">My Services</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
-          </div>
-        </div>
-        <div class="row"> 
-
-        <!--  <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <i class="bi bi-card-checklist"></i>
-            <h4 class="h4 mb-2">Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
-            <ul class="list-unstyled list-line">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-              <li>Non pariatur nisi</li>
-              <li>Magnam soluta quod</li>
-              <li>Lorem ipsum dolor</li>
-              <li>Cumque quae aliquam</li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <i class="bi bi-binoculars"></i>
-            <h4 class="h4 mb-2">Mobile Applications</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
-            <ul class="list-unstyled list-line">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-              <li>Non pariatur nisi</li>
-              <li>Magnam soluta quod</li>
-              <li>Lorem ipsum dolor</li>
-              <li>Cumque quae aliquam</li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <i class="bi bi-brightness-high"></i>
-            <h4 class="h4 mb-2">Graphic Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
-            <ul class="list-unstyled list-line">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-              <li>Non pariatur nisi</li>
-              <li>Magnam soluta quod</li>
-              <li>Lorem ipsum dolor</li>
-              <li>Cumque quae aliquam</li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-            <i class="bi bi-calendar4-week"></i>
-            <h4 class="h4 mb-2">SEO</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
-            <ul class="list-unstyled list-line">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-              <li>Non pariatur nisi</li>
-              <li>Magnam soluta quod</li>
-              <li>Lorem ipsum dolor</li>
-              <li>Cumque quae aliquam</li>
-            </ul>
-          </div>
-        </div> -->
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= 
-    <section class="section pt-0">
-      <div class="container">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_1.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Jean Hicks</p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <!-- <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial">
-                  <img src="assets/img/person_2.jpg" alt="Image" class="img-fluid">
-                  <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-                      explicabo inventore.</p>
-                  </blockquote>
-                  <p>&mdash; Chris Stanworth</p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p class="mb-1">&copy; Vaughn M. Shirey. All Rights Reserved</p>
-          <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-          -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-        <div class="col-sm-6 social text-md-end">
-          <a href="https://twitter.com/VaughnShirey"><span class="bi bi-twitter"></span></a>
-          <a href="https://github.com/vmshirey"><span class="bi bi-github"></span></a>
-          <a href="https://www.linkedin.com/in/shirey/"><span class="bi bi-linkedin"></span></a>
-        </div>
-      </div>
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+                target="_blank" class="w3-hover-opacity">w3.css</a></p>
     </div>
-  </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
 
 </body>
 
