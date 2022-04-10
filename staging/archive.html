@@ -72,19 +72,9 @@
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Life on our planet is rapidly changing...<br /> I'm working on how we can detect that change</h2>
-						</header>
-						<p>I am a <b>biodiversity expert</b> and <b>data scientist</b> working on how to leverage machine-learning to reconstruct historical ecologies and forecast
-						how life on our planet is responding to global change. Along the way, I've developed an interest in cultivating community and in using art to communicate our shared ecological futures.
-						</p>
-					</section>
-
 				<!-- Two -->
 					<section id="two">
-						<h2>Highlighted Work</h2>
+						<h2>All Posts</h2>
 						<div class="row">
 							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
@@ -125,11 +115,8 @@
 								</p>
 							</article>
 						</div>
-						<ul class="actions">
-							<li><a href="archive.html" class="button">Archived Posts</a></li>
-						</ul>
 					</section>
-
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 			</div>
 
 		<!-- Footer -->
@@ -152,6 +139,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+    
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
+    
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+    
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
 
 	</body>
 </html>
