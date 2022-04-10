@@ -78,12 +78,135 @@
         <section id="one">
             <header class="major">
                 <h2>Curriculum Vitae</h2>
+                <a href="#two">Professional Appointments</a> | <a href="#three">Education</a> |
             </header>
-            <p>
-                Coming soon.
-            </p>
+            <p> </p>
         </section>
 
+        <section id="two">
+            <header class="major">
+                <h3>Professional Appointments</h3>
+            </header>
+            <table>
+                <tr>
+                    <td><b>Georgetown University Department of Biology</b><br />
+                        <table width="100%">
+                            <tr>
+                                <td>National Science Foundation Graduate Research Fellow</td><td style="width:20%">2019-2023</td>
+                            </tr>
+                            <tr>
+                                <td>Graduate Teaching Fellow</td><td style="width:20%">2019-2020</td>
+                            </tr>
+                            <tr>
+                                <td>Graduate Research Assistant</td><td style="width:20%">2018-2019</td>
+                            </tr>
+                        </table>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Finnish Museum of Natural History - University of Helsinki</b><br />
+                        <table width="100%">
+                            <tr>
+                                <td>Fulbright Study/Research Fellow</td><td style="width:20%">2017-2018</td>
+                            </tr>
+                        </table>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>The Academy of Natural Sciences of Drexel University</b><br />
+                        <table width="100%">
+                            <tr>
+                                <td>Undergraduate Research Assistant (Entomology)</td><td style="width:20%">2014-2017</td>
+                            </tr>
+                            <tr>
+                                <td>Biodiversity Informatics Support Intern</td><td style="width:20%">2016-2017</td>
+                            </tr>
+                            <tr>
+                                <td>Undergraduate Research Assistant (Botany)</td><td style="width:20%">2013-2014</td>
+                            </tr>
+                        </table>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Philadelphia Water Department</b><br />
+                        <table width="100%">
+                            <tr>
+                                <td>Field Maintenance Technician</td><td style="width:20%">2015-2016</td>
+                            </tr>
+                        </table>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Pottstown Regional Public Library</b><br />
+                        <table width="100%">
+                            <tr>
+                                <td>Circulation Clerk and IT Support</td><td style="width:20%">2010-2013</td>
+                            </tr>
+                        </table>    
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section id="three">
+            <header class="major">
+                <h3>Formal Education</h3>
+            </header>
+            <table>
+                <tr>
+                    <td><b>Georgetown University</b><br />
+                        Ph.D. in Ecology, Evolution, and Animal Behavior<br />
+                        <p style="font-size: 16px;">Highlighted coursework: Advanced Natural Language Processing;
+                            Experimental Design and Analysis; Modern Statistical Models</p>
+                    </td>
+                    <td>2018-2023</td>
+                </tr>
+                <tr>
+                    <td><b>Drexel University</b><br />
+                        B.S. in Environmental Science; Minors in Bioinformatics and Sustainable Design<br />
+                        <p style="font-size: 16px;">Highlighted coursework: Computer Science I, II, and III;
+                            Bioinformatics I and II; Biogeography; Advanced Topics in Evolution;
+                            Database Design; Human-computer Interaction; and Entomology</p>
+                    </td>
+                    <td>2012-2017</td>
+                </tr>
+            </table>
+
+            <header class="major">
+                <h4>Professional Development and Skill Building</h4>
+            </header>
+            <table>
+                <tr>
+                    <td><b>Georgetown Apprenticeship in Teaching Program</b><br />
+                        <p style="font-size: 16px;">Participated in workshops covering course design, classroom interaction,
+                        inclusive pedagogy, and remote instruction. Certificate expected in 2023.</p><br />
+                    </td>
+                    <td><b>2021 Nimble Virtual Shortcourse</b><br />
+                        <p style="font-size: 16px;">An introduction to Nimble in Bayesian modeling with sepcific applications to ecology.</p><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>2021 Organizing for Power Workshop</b><br />
+                        <p style="font-size: 16px;">Hands-on workshop on identifying natural leaders and having effective organizing conversations within the workplace. 
+                            Hosted by the Rosa-Luxemburg Stiftung</p><br />
+                    </td>
+                    <td><b>2021 Arctic Winter College</b><br />
+                        <p style="font-size: 16px;">A multidisciplinary, policy focused series of lectures and working-groups surrounding issues of migration, ecology,
+                            and economics in the global Arctic. Hosted by the Arctic Institute.</p><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>2021 Bayesian Modeling with INLA</b><br />
+                        <p style="font-size: 16px;">Hands-on workshop focused on using R-INLA in statistical modeling. Hosted by PR
+                            Statistics.</p><br />
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     </div>
 
@@ -110,7 +233,27 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
