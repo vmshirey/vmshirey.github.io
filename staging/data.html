@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Shirey BDS Team</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Roboto", Arial, sans-serif
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            text-align: center;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            color: #FFFFFF !important;
+            background-color: #56b4e9 !important;
+            border-color: #56b4e9 !important;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #myBtn:hover {
+            text-align: center;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            background-color: #FFFFFF !important;
+            color: #222222 !important;
+            border-color: #222222 !important;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Shirey
+                        Biodiversity Data Science Group</span>
+                </a>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Our Research</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="data.html">Our Data</a></li>
+                <li><a href="generic.html">Our Teaching</a></li>
+                <li><a href="generic.html">Our Publications</a></li>
+                <li><a href="generic.html">Opportunities</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <h1>Our Data and Code</h1>
+                <div class="row">
+                    <p>You can use the search function below to look for repositories which contain relevant data and
+                        code. </p>
+
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                    <br /><br />
+
+                    <ul id="myUL">
+                        <li>
+                            <b>Northern European Spiders and Climate Change | Shirey and Cardoso 2023</b><br />
+                            <a href="">Zenodo/DataDryad</a> | <a href="">GitHub</a>
+                        </li>
+                        </li>
+                        <li><b>High-latitude North American Butterflies and Climate Change | Shirey <i>et al.</i>
+                                2022</b><br />
+                            <a href="">Zenodo/DataDryad</a> | <a href="">GitHub</a>
+                        </li>
+                        <li><b>LepTraits v1.0: A Globally Comprehensive Dataset of Butterfly Traits | Shirey <i>et al.</i>
+                                2022</b><br />
+                            <a href="">FigShare</a> | <a href="">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2>Follow</h2>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+                        </li>
+                        <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Untitled. All rights reserved</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByClassName("b")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
