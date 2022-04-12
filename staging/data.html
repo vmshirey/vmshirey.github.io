@@ -104,13 +104,11 @@
                         code. </p>
 
                     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-                    <br /><br />
-
                     <ul id="myUL">
                         <li>
                             <b>Northern European Spiders and Climate Change | Shirey and Cardoso 2023</b><br />
-                            <a href="">Zenodo/DataDryad</a> | <a href="">GitHub</a>
-                            <i>spiders, arachnids, climate change, europe</i>
+                            <a href="">Zenodo/DataDryad</a> | <a href="">GitHub</a><br/>
+                            Tags:<i> spiders, arachnids, climate change, europe</i>
                         </li>
                         </li>
                         <li><b>High-latitude North American Butterflies and Climate Change | Shirey <i>et al.</i>
@@ -156,25 +154,25 @@
     <script src="assets/js/main.js"></script>
     <script>
         function myFunction() {
-            // Declare variables
-            var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('myInput');
-            filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
-            li = ul.getElementsByTagName('li');
-
-            // Loop through all list items, and hide those who don't match the search query
-            for (i = 0; i < li.length; i++) {
-                a = li[i].getElementByTagName('i')[0];
-                txtValue = a.textContent || a.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
-                } else {
-                    li[i].style.display = "none";
-                }
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName('li');
+        
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("i")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
             }
+          }
         }
-    </script>
+        </script>
 
 </body>
 
