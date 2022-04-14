@@ -7,13 +7,59 @@
 <html>
 
 <head>
-    <title>Generic - Phantom by HTML5 UP</title>
+    <title>Vaughn Shirey, Ph.D. Candidate</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        .imrow {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .imcolumn {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .imcolumn img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .imcolumn {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .imcolumn {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        img {
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -60,63 +106,104 @@
                 <h1>Perspective on Diversity, Equity, and Inclusion</h1>
                 <span class="image main"><img src="images/researchHeader.png" alt="" /></span>
                 <div class="row">
-                    <div class="col-7 col-m-12">
-                        <p>Unfortunately, the field of biology has a history fraught with the prepetuation of violence.
-                            Combating this dark history requires active recognition of where biology has failed people
-                            of marginalized identities.</p>
-                    </div>
-                    <div class="col-5 col-m-12">
-
+                    <div class="col-12 col-m-12">
+                        <p>Diversity, equity, and inclusion (DEI) initiatives require direct action. In my roles as a
+                            department organizer, bargaining committee member, and grievance officer for
+                            the <a href="https://www.wearegage.org/" target="_blank"><u><b>Georgetown Alliance of
+                                        Graduate Employees (GAGE)</a></b></u>, I know first-hand how conversation,
+                            coordination, and execution can make a difference in the lives
+                            of graduate workers. As a <a href="https://www.blackandpink.org/"
+                                target="_blank"><u><strong>penpal to incarcerated LGBTQ+ individuals</strong></u></a>
+                            I have gained insight into the complex sociological and economic issues behind harm,
+                            punishment, reconciliation, and transformative justice. As a <a
+                                href="https://www.lib.berkeley.edu/goldman/pdfs/EmmaGoldman_ANARCHISM_WHATITREALLYSTANDSFOR.pdf"
+                                target="_blank">
+                                <u><b>political anarchist and
+                                        abolitionist</b></u></a> I am committed to harm reduction, mutual aid, community
+                            building, and a decarceral philosophy. Finally,
+                            as a member of the broader queer, disabled, and neurodivergent community, my own experiences
+                            with harassment and discrimination inform my approach to DEI in the field.
+                        </p>
+                        <p>These fundamental experiences lend themselves to several core approaches to diversity,
+                            equity, and inclusion in the field of biodiversity science, namely:</p>
+                        <ul>
+                            <li><b>Community Building: </b>Direct action is impossible without strong communities.
+                                Communities in which people feel a sense of belonging and assurance that they are
+                                protected by the power of the
+                                collective. I have worked extensively to build community across my various roles.
+                                Firstly, through GAGE, I have worked to organize workshops on navigating difficult
+                                conversations and conflict. My
+                                friendship with incarcerated penpals has opened by perspective on who needs community in
+                                order to heal and how I might fit into organzing that broader sense of communities for
+                                those who are not
+                                able to cultivate healthy relationships for themselves.</li>
+                            <li><b>Direct Action: </b>Authentic committment to DEI requires acting decisively with the
+                                consent and dirction of marginalized individuals. Often this requires us to engage with
+                                conflict and uncomfortable
+                                conversations. Equity demands that we show up along the axes of our majoritarian
+                                identities for those who are marginalized. Equity demands that we act. Further, in
+                                hindsight, the field of
+                                biology has to achieve reconciliation given its trouble history across all
+                                subdisciplines.</li>
+                            <li><b>Harm Reduction: </b>Harm happens and each of our responses provides a critical
+                                juncture from which we can choose to act according to our values. As the elected
+                                grievance officer for GAGE
+                                during two consecutive terms, I fought to earn graduate workers benefits, win back
+                                unpaid wages, facilitate discussions which resulted in non-termination of visa status,
+                                and direct graduate workers to resources
+                                to support them financially through hardship.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <section>
-                    <h2>Get in touch</h2>
-                    <form method="post" action="#">
-                        <div class="fields">
-                            <div class="field half">
-                                <input type="text" name="name" id="name" placeholder="Name" />
-                            </div>
-                            <div class="field half">
-                                <input type="email" name="email" id="email" placeholder="Email" />
-                            </div>
-                            <div class="field">
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
-                            </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <section>
+                <h2>Get in touch</h2>
+                <form method="post" action="#">
+                    <div class="fields">
+                        <div class="field half">
+                            <input type="text" name="name" id="name" placeholder="Name" />
                         </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="primary" /></li>
-                        </ul>
-                    </form>
-                </section>
-                <section>
-                    <h2>Follow</h2>
-                    <ul class="icons">
-                        <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
-                        </li>
-                        <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
-                        </li>
-                        <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
-                        </li>
-                        <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
-                        </li>
-                        <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-                        <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-                        <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-                        <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                        <div class="field half">
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send" class="primary" /></li>
                     </ul>
-                </section>
-                <ul class="copyright">
-                    <li>&copy; Untitled. All rights reserved</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </form>
+            </section>
+            <section>
+                <h2>Follow</h2>
+                <ul class="icons">
+                    <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
+                    </li>
+                    <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+                    </li>
+                    <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+                    </li>
+                    <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
+                    </li>
+                    <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+                    <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                    <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
                 </ul>
-            </div>
-        </footer>
+            </section>
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
 
     </div>
 
