@@ -56,75 +56,19 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>I research cross-scale trends in Earth's biodiversity<br />
-								using the latest technologies.</h1>
 								<!-- <p>I am a <b>biodiversity expert</b>, <b>data scientist</b>, and <b>insect ecologist</b> driven to solve problems in global change biology and address our
 								ongoing biodiversity crisis.</p> -->
 							</header>
-							<section class="tiles">
-								<!--<article class="style3">
-									<span class="image">
-										<img src="images/item001.png" alt="" />
-									</span>
-									<a href="research.html">
-										<h2>My Research</h2>
-										<div class="content">
-											<p>Discover our science and its impacts.</p>
-										</div>
-									</a>
-								</article>
-								 <article class="style6">
-									<span class="image">
-										<img src="images/item002.png" alt="" />
-									</span>
-									<a href="team.html">
-										<h2>Our Team</h2>
-										<div class="content">
-											<p>Meet our talented team members.</p>
-										</div>
-									</a>
-								</article> 
-								<article class="style3">
-									<span class="image">
-										<img src="images/item003.png" alt="" />
-									</span>
-									<a href="data.html">
-										<h2>Our Data</h2>
-										<div class="content">
-											<p>Explore our freely available data and code.</p>
-										</div>
-									</a>
-								</article> -->
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."><br /><br />
+							<section class="tiles", id="blogs">
 								<article class="style3">
 									<span class="image">
 										<img src="images/item005.png" alt="" />
 									</span>
 									<a href="publications.html">
-										<h2>Research and Publications</h2>
+										<h2>Occupancy-detection Models for Natural History Data</h2>
 										<div class="content">
-											<p>View my entire publication record.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/item004.png" alt="" />
-									</span>
-									<a href="teaching.html">
-										<h2>Teaching and Mentorship</h2>
-										<div class="content">
-											<p>Read my teaching philosophy.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/item006.png" alt="" />
-									</span>
-									<a href="diversity.html">
-										<h2>Diversity, Equity, and Inclusion</h2>
-										<div class="content">
-											<p>Read about my perspective on justice.</p>
+											<p>Tags: occupancy, statistics, methods, programming, 2022</p>
 										</div>
 									</a>
 								</article>
@@ -135,25 +79,6 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<!-- <section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section> -->
 							<section>
 								<ul class="icons">
 
@@ -173,6 +98,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+                function myFunction() {
+                    // Declare variables
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById('myInput');
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("blogs");
+                    li = ul.getElementsByTagName('article');
+        
+                    // Loop through all list items, and hide those who don't match the search query
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("div")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
 
 	</body>
 </html>
