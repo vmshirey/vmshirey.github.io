@@ -30,11 +30,47 @@
                 <div class="inner">
                     <a href="../blog.html"> &#8592; Back to blogs</a>
                     <header>
-                        <h1>Occupancy-detection models demonstrate promise for historical reconstruction of undersampled regions.</h1>
-                        <p>This web application displays the sum of my biodiversity observations across the tree of life.</p>
+                        <h1>Occupancy-detection models demonstrate promise for historical reconstruction of ecologies in undersurveyed regions.</h1>
                     </header>
-                    <div id="app"></div>
-                    </section>
+                    <div class="row">
+                        <div class="col-6 col-m-12">
+                            <p>The biogeography of global change requires us to be rapidly informed about species' range shifts, expansions, and contractions as well 
+                                as general occupancy trends. Many of these metrics are best derived from structured sampling programs which make an effort to record 
+                                detection/non-detection data and capture metrics of effort simultaenously. Unfortunately, such structured sampling is typically
+                                 restricted to areas of high human population density or with greater ease of access (for example, roadsides) (you can read more 
+                                 about this here and here). This prevents us from assessing trends in species' occupancy over time, especially where structured 
+                                 sampling is sparse.</p>
+
+                            <p>Despite this challenge, natural history collections may provide us with an opportunity to reconstruct historical ecologies from 
+                                unstructured, largely incidental detection data. In order to use these data, analytical frameworks MUST account for a greatly 
+                                heterogenous detection process given that museum specimens can/often end up in collections without the explicit intent of reflecting 
+                                ecological communities. For example, many collections represent an amalgamation of specimens from taxonomic research, agricultural 
+                                studies, and hobbyist collectors. Fortunately, occupancy-detection models are an already established framework for looking at 
+                                occupancy trends given a overlying detection process (see more about occupancy-detection models here).</p>
+                                
+                            <p>I was fortunate to join the M'Gonigle lab group out at Simon-Fraser University over the latter part of 2021 since my own research 
+                                focused on applying this framework to unstructured data in the North American boreal and Arctic regions. This jumpstarted a 
+                                collaboration, eventually my second dissertation chapter, which examines some of the limitations of applying occupancy-detection 
+                                models to natural history data. That research is now published at Methods in Ecology and Evolution (with major thanks to co-authors, 
+                                <a href="https://scholar.google.com/citations?user=kKsb48YAAAAJ&hl=en&oi=ao" target="_blank">Rassim Khelifa</a>, 
+                                <a href="https://scholar.google.com/citations?user=FpX6TbkAAAAJ&hl=en&oi=ao" target="_blank">Leithen M'Gonigle</a>, and 
+                                <a href="https://scholar.google.com/citations?user=3bDpYTEAAAAJ&hl=en&oi=ao" target="_blank">Melissa Guzman</a>).</p>
+                        </div>
+                        <div class="col-6 col-m-12">
+                        </div>
+                        <div class="col-12 col-m-12"><b>Some big take-aways from our research:</b></div>
+                    </div>
+                   
+                    <ul>
+                        <li>Occupancy-detection models that compare two time periods to each other are generally bad practice and should be avoided. We recommend
+                            using at least 5 time periods, but this will depend on your estimate of community visit probability (see below).
+                        </li>
+                        <li>The probability that a collector visited a site with the intent to observe all species in a community versus a single species is important
+                            when considering eventual model error. The greater number of community focused visits, the lower the error of the model. We recommend at least
+                            half of the data come from this type of sampling. Of course, this value is unknown in most datasets; however, we approximated it using spatiotemporal
+                            clustering of all specimens collected on the same day within 1 kilometer of each other.
+                        </li>
+                    </ul>
                 </div>
             </div>
 
