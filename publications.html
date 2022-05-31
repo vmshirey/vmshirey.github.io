@@ -107,7 +107,7 @@
         <!-- Main -->
         <div id="main">
             <div class="inner">
-                <h1>Research and Publications</h1>
+                <h1>Publications</h1>
                 <span class="image main"><img src="images/researchHeader.png" alt="" /></span>
 
                 <div class="row">
@@ -115,8 +115,21 @@
                         <p>You can use the search function below to look for publications authored by me. Publications are ordered by most recent first (including those <i>in press</i>,
                             <i>in review</i>, and <i>in revision</i>).</p>
                         <p><sup>+</sup> indicates mentee. | <sup>*</sup> indicates equal contribution.</p>
+                        <span><input type="checkbox" id="checkbox"><label for="checkbox">Hide manuscripts <i>in prep</i> (will still appear in search).</label></span>
                         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."><br /><br />
                         <table id="myTable">
+                            <tr id="prep">
+                                <td></td>
+                                <td><b>V. Shirey</b>, N. Neupane, and L. Ries. "The ecological dynamics of North American, high latitude butterfly communities under 50 years of recent climate change." <i>In prep.</i><br />
+                                  <small>Tags:<i> arctic, boreal, butterflies, climate change, evolution, lepidoptera</i></small></td>
+                              </tr>
+                            <tr>
+                                <td></td>
+                                <td>A.Y. Kawahara, C. Storer, A.P.S. Carvalho, D.M. Plotkin, ..., <b>V. Shirey</b>, 
+                                     A. Sourakov, G. Talavera, R. Vila, P. Vlasanek, H. Wang, A.D. Warren, K.R. Willmott, M. Yago, W. Jetz, M. Jarzyna, J.W. Breinholt, M. Espeland, L. Ries, R.P. Guralnick, 
+                                     N.E. Pierce, and D.J. Lohman. 2022. "Evolution and diversification dynamics of butterflies." <i>In review.</i><br />
+                                  <small>Tags:<i> butterflies, evolution, lepidoptera</i></small></td>
+                              </tr>
                             <tr>
                               <td></td>
                               <td>T. Rippel<sup>*</sup>, C.M. Davis<sup>*</sup>, <b>V. Shirey</b>, and G. Wimp. 2022. "The grass is always greener: using remote sensing and machine learning to track
@@ -254,6 +267,13 @@
             }
           }
         }
+
+        $(document).ready(function () {
+    $('#checkbox').change(function () {
+        if (!this.checked) $('#prep').fadeIn('slow');
+        else $('#prep').fadeOut('slow');
+    });
+});
         </script>
 
 </body>
