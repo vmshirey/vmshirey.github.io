@@ -2309,6 +2309,12 @@ input, select, textarea {
 		}
 
 /* Image */
+.floatRight{
+	float:right;
+	margin-left:20px;
+	width:30%;
+	max-width:50%;
+	height:auto;};
 
 	.image {
 		border-radius: 4px;
@@ -2370,12 +2376,15 @@ input, select, textarea {
 
 			}
 
-	.floatRight{
-		float:right;
-		margin-left:20px;
+			
+	.floatLeft{
+		float:left;
+		margin-right:20px;
 		width:30%;
 		max-width:35%;
 		height:auto;};
+
+	
 		
 /* Table */
 
