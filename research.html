@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>Shirey BDS Research</title>
+    <title>Vaughn Shirey, Ph.D. Candidate</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -26,8 +26,8 @@
 
                 <!-- Logo -->
                 <a href="index.html" class="logo">
-                    <span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Shirey
-                        Biodiversity Data Science Group</span>
+                    <span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Vaughn Shirey,
+                        Ph.D. Candidate</span>
                 </a>
 
                 <!-- Nav -->
@@ -48,41 +48,42 @@
                 <!-- <li><a href="research.html">My Research</a></li> -->
                 <!-- <li><a href="team.html">Our Team</a></li> -->
                 <!-- <li><a href="data.html">Our Data</a></li> -->
-                <li><a href="publications.html">Research + Publications</a></li>
-				<li><a href="teaching.html">Teaching + Mentorship</a></li>
+                <li><a href="publications.html">Publications</a></li>
+				<li><a href="research.html">Research Themes</a></li>
+				<li><a href="teaching.html">Teaching Philosophy</a></li>
                 <li><a href="diversity.html">Diversity, Equity, and Inclusion</a></li>
 				<li></li>
 				<!-- <li><a href="blog.html">Blog</a></li> -->
             </ul>
         </nav>
 
-        <!-- Main -->
-        <div id="main">
+         <!-- Main -->
+         <div id="main">
             <div class="inner">
-                <h1>Our Research</h1>
-                <span class="image main"><img src="images/researchHeader.png" alt="" /></span>
-                <p><b>The short story:</b> Our research focuses on using machine-learning, remote-sensing, and other big
-                    data toolsets to reconstruct historical ecologies
-                    and forecast those reconstructions into the future. Along the way, we strive to make open-science
-                    and open-education possible by sharing toolkits and
-                    instructional resources. We believe that transparency and integrity are key to our future on this
-                    planet.</p>
-                <hr />
-                <p><b>The long story:</b> We love data.</p>
-            </div>
+                <h1>Research Themes</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>This page is currently under development...</h2>
+                        <h2>Global Change Ecology + Evolution</h2>
+                    </div>
+                    <div class="col-6">
+                        <h2>Biodiversity Data Science</h2>
+                        <p>I am interested in utilizing emerging and novel modeling approaches in order to make the best use of publicly available biodiversity information.</p>
+                        <span><img src="images/bds_img.PNG" alt="A diagram of a simulation used to test the suitability of occupancy-detection models for museum specimen data." style="max-width:90%;"></span>
+                    </div>
+                    <div class="col-6">
+                        <h2></h2>
+                    </div>
+                 </div>      
+            </div>   
         </div>
 
         <!-- Footer -->
         <footer id="footer">
             <div class="inner">
                 <section>
-                    <h2>Follow</h2>
                     <ul class="icons">
-                        <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
-                        </li>
-                        <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
-                        </li>
-                        <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+
                     </ul>
                 </section>
                 <ul class="copyright">
@@ -100,6 +101,27 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("p")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
 </body>
 
