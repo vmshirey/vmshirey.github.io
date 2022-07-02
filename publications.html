@@ -241,7 +241,7 @@
     var height = 150 - margin.top - margin.bottom;
     
     // set the ranges
-    var x = d3.scaleTime().range([0, width]);
+    var x = d3.scaleLinear().range([0, width]);
     var y0 = d3.scaleLinear().range([height, 0]);
     var y1 = d3.scaleLinear().range([height, 0]);
     
