@@ -306,8 +306,10 @@ grp
   .append("path")
   .attr("transform", `translate(${margin.left},0)`)
   .datum(data)
+  .attr("fill", "none")
   .attr("stroke", "#49bf9d")
   .attr("stroke-width", strokeWidth)
+  .attr("d", line);
 
 // Add points
 grp
@@ -325,7 +327,7 @@ grp
         .attr("fill", "white")
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
-        .on("mouseleave", mouseleave)
+        .on("mouseleave", mouseleave);
 
 // Add the X Axis
 chart
