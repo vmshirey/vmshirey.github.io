@@ -260,9 +260,7 @@
     // moves the 'group' element to the top left margin
     var svg = d3.select("#chart").append("svg")
         .attr("viewBox", `0 0 ${widthValue} ${heightValue}`)
-      .append("g")
-        .attr("transform",
-              "translate(" + margin.left + "," + margin.top + ")");
+        .append("g").attr("transform", `translate(${margin.left},0)`);
     
     // Get the data
     d3.csv("assets/data/data.csv", function(error, data) {
@@ -316,6 +314,12 @@
           .attr("transform", "translate( " + widthValue + ", 0 )")
           .call(d3.axisRight(y1));
     
+      svg.append("text")
+            .attr("text-anchor", "end")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -margin.right+20)
+            .attr("x", -margin.top)
+            .text("Cumulative Citations")
     });
     
     </script>
