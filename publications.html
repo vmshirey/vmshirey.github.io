@@ -274,6 +274,22 @@ const area = d3
   .y0(height)
   .y1(dataPoint => yScale(dataPoint.yearpub));
 
+// Three function that change the tooltip when user hover / move / leave a cell
+var mouseover = function(d) {
+        Tooltip
+          .style("opacity", 1)
+      }
+var mousemove = function(d) {
+        Tooltip
+          .html("Exact value: " + d.value)
+          .style("left", (d3.mouse(this)[0]+70) + "px")
+          .style("top", (d3.mouse(this)[1]) + "px")
+      }
+var mouseleave = function(d) {
+        Tooltip
+          .style("opacity", 0)
+      }
+
 // Add area
 grp
   .append("path")
@@ -282,6 +298,24 @@ grp
   .attr("stroke", "#49bf9d")
   .attr("stroke-width", strokeWidth)
   .attr("d", area);
+
+// Add points
+grp
+  .append("g")
+  .selecAll("dot")
+  .data(data)
+      .enter()
+      .append("circle")
+        .attr("class", "myCircle")
+        .attr("cx", function(d) { return x(d.date) } )
+        .attr("cy", function(d) { return y(d.value) } )
+        .attr("r", 8)
+        .attr("stroke", "#69b3a2")
+        .attr("stroke-width", 3)
+        .attr("fill", "white")
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave
 
 // Add the X Axis
 chart
