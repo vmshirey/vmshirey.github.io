@@ -224,9 +224,9 @@
     var parseTime = d3.timeParse("%d-%m-%y");
     
     // set the ranges
-    var x = d3.scaleTime().range([0, width]);
-    var y0 = d3.scaleLinear().range([height, 0]);
-    var y1 = d3.scaleLinear().range([height, 0]);
+    var x = d3.scaleTime().range([0, widthValue]);
+    var y0 = d3.scaleLinear().range([heightValue, 0]);
+    var y1 = d3.scaleLinear().range([heightValue, 0]);
     
     // define the 1st line
     var valueline = d3.line()
