@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
         <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
         <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3.v6.js"></script>
     </head>
 	<body class="is-preload">
 
@@ -290,7 +290,7 @@ grp
 chart
   .append("g")
   .attr("transform", `translate(0,${height})`)
-  .call(d3.axisBottom(xScale).ticks(data.length));
+  .call(d3.axisBottom(xScale).ticks(data.length).tickFormat(d3.format("d")));
 
 // Add the Y Axis
 chart
