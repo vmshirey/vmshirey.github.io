@@ -233,12 +233,12 @@
     // define the 1st line
     var valueline = d3.line()
         .x(function(d) { return x(d.date); })
-        .y(function(d) { return y0(d.close); });
+        .y(function(d) { return y0(d.publications); });
     
     // define the 2nd line
     var valueline2 = d3.line()
         .x(function(d) { return x(d.date); })
-        .y(function(d) { return y1(d.open); });
+        .y(function(d) { return y1(d.citations); });
     
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
