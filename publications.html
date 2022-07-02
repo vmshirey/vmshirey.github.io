@@ -220,7 +220,7 @@
     var heightValue = 150;
     var widthValue = 600;
     
-    var margin = {top: 5, right: 40, bottom: 5, left: 50};
+    var margin = {top: 0, right: 40, bottom: 20, left: 50};
 
     // parse the date / time
     var parseTime = d3.timeParse("%d-%m-%Y");
@@ -283,7 +283,6 @@
           .attr("transform", "translate(0," + heightValue + ")")
           .call(d3.axisBottom(x));
 
-    
       // Add the Y0 Axis
       svg.append("g")
           .attr("class", "axisSteelBlue")
