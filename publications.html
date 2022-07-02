@@ -239,7 +239,7 @@ const data = [
   }
 ];
 
-const heightValue = 200;
+const heightValue = 100;
 const widthValue = 600;
 
 // Create SVG and padding for the chart
@@ -250,10 +250,10 @@ const svg = d3
 ;
 
 const strokeWidth = 1.5;
-const margin = { top: 0, bottom: 0, left: 30, right: 20 };
+const margin = { top: 5, bottom: 5, left: 30, right: 20 };
 const chart = svg.append("g").attr("transform", `translate(${margin.left},0)`);
 const width = 600 - margin.left - margin.right - (strokeWidth * 2);
-const height = 200 - margin.top - margin.bottom;
+const height = 100 - margin.top - margin.bottom;
 const grp = chart
   .append("g")
   .attr("transform", `translate(-${margin.left - strokeWidth},-${margin.top})`);
