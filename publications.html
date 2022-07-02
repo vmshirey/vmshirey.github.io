@@ -249,8 +249,8 @@ const svg = d3
   .attr("viewBox", `0 0 ${widthValue} ${heightValue}`)
 ;
 
-const strokeWidth = 1.5;
-const margin = { top: 5, bottom: 5, left: 30, right: 20 };
+const strokeWidth = 1;
+const margin = { top: 20, bottom: 20, left: 30, right: 30 };
 const chart = svg.append("g").attr("transform", `translate(${margin.left},0)`);
 const width = 600 - margin.left - margin.right - (strokeWidth * 2);
 const height = 100 - margin.top - margin.bottom;
@@ -297,6 +297,25 @@ chart
   .append("g")
   .attr("transform", `translate(0, 0)`)
   .call(d3.axisLeft(yScale));
+
+chart
+  .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Number of Publications"); 
+
+chart
+  .append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + margin.top + 20) + ")")
+      .style("text-anchor", "middle")
+      .text("Year");
+
+
   </script>
 
 	</body>
