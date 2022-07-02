@@ -170,7 +170,7 @@
 					<ul class="icons">
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Vaughn M. Shirey</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -239,7 +239,7 @@ const data = [
   }
 ];
 
-const heightValue = 300;
+const heightValue = 200;
 const widthValue = 600;
 
 // Create SVG and padding for the chart
@@ -250,7 +250,7 @@ const svg = d3
 ;
 
 const strokeWidth = 1.5;
-const margin = { top: 0, bottom: 20, left: 30, right: 20 };
+const margin = { top: 5, bottom: 20, left: 30, right: 20 };
 const chart = svg.append("g").attr("transform", `translate(${margin.left},0)`);
 const width = 600 - margin.left - margin.right - (strokeWidth * 2);
 const height = 300 - margin.top - margin.bottom;
@@ -279,7 +279,7 @@ grp
   .append("path")
   .attr("transform", `translate(${margin.left},0)`)
   .datum(data)
-  .style("fill", "#49bf9d")
+  .style("fill", "white")
   .attr("stroke", "#49bf9d")
   .attr("stroke-linejoin", "round")
   .attr("stroke-linecap", "round")
