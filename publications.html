@@ -218,20 +218,24 @@
 // Fake data
 const data = [
   {
+    year: 2018,
+    yearpub: 2
+  },  
+  {
     year: 2019,
-    popularity: 50
+    yearpub: 2
   },
   {
     year: 2020,
-    popularity: 150
+    yearpub: 0
   },
   {
     year: 2021,
-    popularity: 200
+    yearpub: 4
   },
   {
     year: 2022,
-    popularity: 130
+    yearpub: 1
   }
 ];
 
@@ -258,7 +262,7 @@ const grp = chart
 const yScale = d3
   .scaleLinear()
   .range([height, 0])
-  .domain([0, d3.max(data, dataPoint => dataPoint.popularity)]);
+  .domain([0, d3.max(data, dataPoint => dataPoint.yearpub)]);
 const xScale = d3
   .scaleLinear()
   .range([0, width])
@@ -268,7 +272,7 @@ const area = d3
   .area()
   .x(dataPoint => xScale(dataPoint.year))
   .y0(height)
-  .y1(dataPoint => yScale(dataPoint.popularity));
+  .y1(dataPoint => yScale(dataPoint.yearpub));
 
 // Add area
 grp
