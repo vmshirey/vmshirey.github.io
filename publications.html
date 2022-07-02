@@ -302,6 +302,13 @@
       svg.append("g")
           .attr("class", "axisSteelBlue")
           .call(d3.axisLeft(y0));
+
+      svg.append("text")
+            .attr("text-anchor", "end")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -margin.left+20)
+            .attr("x", -margin.top)
+            .text("Cumulative Publications")
     
       // Add the Y1 Axis
       svg.append("g")
