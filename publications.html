@@ -250,10 +250,10 @@ const svg = d3
 ;
 
 const strokeWidth = 1.5;
-const margin = { top: 5, bottom: 20, left: 30, right: 20 };
+const margin = { top: 0, bottom: 0, left: 30, right: 20 };
 const chart = svg.append("g").attr("transform", `translate(${margin.left},0)`);
 const width = 600 - margin.left - margin.right - (strokeWidth * 2);
-const height = 300 - margin.top - margin.bottom;
+const height = 200 - margin.top - margin.bottom;
 const grp = chart
   .append("g")
   .attr("transform", `translate(-${margin.left - strokeWidth},-${margin.top})`);
