@@ -215,53 +215,84 @@
         </script>
 
 <script>
-  
-  // append the svg object to the body of the page
-  const svg = d3.select("#my_citeviz")
-    .append("svg")
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", `0 0 300 600`)
-    .append("g")
-      .attr("transform", `translate(${margin.left},${margin.top})`);
-  
-  //Read the data
-  d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered.csv").then( function(data) {
-  
-    // group the data: I want to draw one line per group
-    const sumstat = d3.group(data, d => d.name); // nest function allows to group the calculation per level of a factor
-  
-    // Add X axis --> it is a date format
-    const x = d3.scaleLinear()
-      .domain(d3.extent(data, function(d) { return d.year; }))
-    svg.append("g")
-      .attr("transform", `translate(0, ${height})`)
-      .call(d3.axisBottom(x).ticks(5));
-  
-    // Add Y axis
-    const y = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return +d.n; })])
-    svg.append("g")
-      .call(d3.axisLeft(y));
-  
-    // color palette
-    const color = d3.scaleOrdinal()
-      .range(['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#ffff33','#a65628','#f781bf','#999999'])
-  
-    // Draw the line
-    svg.selectAll(".line")
-        .data(sumstat)
-        .join("path")
-          .attr("fill", "none")
-          .attr("stroke", function(d){ return color(d[0]) })
-          .attr("stroke-width", 1.5)
-          .attr("d", function(d){
-            return d3.line()
-              .x(function(d) { return x(d.year); })
-              .y(function(d) { return y(+d.n); })
-              (d[1])
-          })
-  
-  })
+// Fake data
+const data = [
+  {
+    year: 2019,
+    popularity: 50
+  },
+  {
+    year: 2020,
+    popularity: 150
+  },
+  {
+    year: 2021,
+    popularity: 200
+  },
+  {
+    year: 2022,
+    popularity: 130
+  }
+];
+
+const heightValue = 300;
+const widthValue = 600;
+
+// Create SVG and padding for the chart
+const svg = d3
+  .select("#chart")
+  .append("svg")
+  .attr("viewBox", `0 0 ${widthValue} ${heightValue}`)
+;
+
+const strokeWidth = 1.5;
+const margin = { top: 0, bottom: 20, left: 30, right: 20 };
+const chart = svg.append("g").attr("transform", `translate(${margin.left},0)`);
+const width = 600 - margin.left - margin.right - (strokeWidth * 2);
+const height = 300 - margin.top - margin.bottom;
+const grp = chart
+  .append("g")
+  .attr("transform", `translate(-${margin.left - strokeWidth},-${margin.top})`);
+
+// Create scales
+const yScale = d3
+  .scaleLinear()
+  .range([height, 0])
+  .domain([0, d3.max(data, dataPoint => dataPoint.popularity)]);
+const xScale = d3
+  .scaleLinear()
+  .range([0, width])
+  .domain(d3.extent(data, dataPoint => dataPoint.year));
+
+const area = d3
+  .area()
+  .x(dataPoint => xScale(dataPoint.year))
+  .y0(height)
+  .y1(dataPoint => yScale(dataPoint.popularity));
+
+// Add area
+grp
+  .append("path")
+  .attr("transform", `translate(${margin.left},0)`)
+  .datum(data)
+  .style("fill", "lightblue")
+  .attr("stroke", "steelblue")
+  .attr("stroke-linejoin", "round")
+  .attr("stroke-linecap", "round")
+  .attr("stroke-width", strokeWidth)
+  .attr("d", area);
+
+// Add the X Axis
+chart
+  .append("g")
+  .attr("transform", `translate(0,${height})`)
+  .call(d3.axisBottom(xScale).ticks(data.length));
+
+// Add the Y Axis
+chart
+  .append("g")
+  .attr("transform", `translate(0, 0)`)
+  .call(d3.axisLeft(yScale));
   </script>
 
 	</body>
