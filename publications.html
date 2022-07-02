@@ -262,7 +262,7 @@ const grp = chart
 const yScale = d3
   .scaleLinear()
   .range([height, 0])
-  .domain([0, d3.max(data, dataPoint => dataPoint.yearpub)]);
+  .domain([0, d3.max(data, dataPoint => dataPoint.yearpub)+1]);
 const xScale = d3
   .scaleLinear()
   .range([0, width])
