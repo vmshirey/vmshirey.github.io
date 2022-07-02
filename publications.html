@@ -237,13 +237,16 @@
     
     var margin = {top: 20, right: 40, bottom: 20, left: 50};
 
+    var width = 600 - margin.left - margin.right - (1);
+    var height = 150 - margin.top - margin.bottom;
+
     // parse the date / time
     var parseTime = d3.timeParse("%d-%m-%Y");
     
     // set the ranges
-    var x = d3.scaleTime().range([0, widthValue]);
-    var y0 = d3.scaleLinear().range([heightValue, 0]);
-    var y1 = d3.scaleLinear().range([heightValue, 0]);
+    var x = d3.scaleTime().range([0, width]);
+    var y0 = d3.scaleLinear().range([height, 0]);
+    var y1 = d3.scaleLinear().range([height, 0]);
     
     // define the 1st line
     var valueline = d3.line()
@@ -261,7 +264,7 @@
     var svg = d3.select("#chart").append("svg")
         .attr("viewBox", `0 0 ${widthValue} ${heightValue}`)
         .append("g").attr("transform", `translate(${margin.left},0)`);
-    
+
     // Get the data
     d3.csv("assets/data/data.csv", function(error, data) {
       if (error) throw error;
@@ -293,7 +296,7 @@
     
       // Add the X Axis
       svg.append("g")
-          .attr("transform", "translate(0," + heightValue + ")")
+          .attr("transform", "translate(0," + height + ")")
           .call(d3.axisBottom(x));
 
       // Add the Y0 Axis
@@ -311,13 +314,13 @@
       // Add the Y1 Axis
       svg.append("g")
           .attr("class", "axisRed")
-          .attr("transform", "translate( " + widthValue + ", 0 )")
+          .attr("transform", "translate( " + width + ", 0 )")
           .call(d3.axisRight(y1));
     
       svg.append("text")
             .attr("text-anchor", "end")
             .attr("transform", "rotate(-90)")
-            .attr("y", -margin.right+20)
+            .attr("y", -margin.right-20)
             .attr("x", -margin.top)
             .text("Cumulative Citations")
     });
