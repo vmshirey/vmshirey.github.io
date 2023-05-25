@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Vaughn Shirey</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+        <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+              <div class="container">
+                  <a class="navbar-brand" href="index.html">InsectAI Lab</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="pedagogy.html">Pedagogy</a></li>
+                          <li class="nav-item"><a class="nav-link active" href="#">Publications</a></li>
+                          <li class="nav-item"><a class="nav-link" href="vitae.html">Vitae</a></li>
+                          <!-- <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><hr class="dropdown-divider" /></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                          </li> -->
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+        <!-- ABOUT -->
+        <div class="container" id="home">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-left mt-5">
+                        <h1 class="display-4">Publications</h1>
+                        <p>+ indicates a mentee | * indicates equal contribution | <b>Lab members are in bold</b></p>
+                        <table id="myTable" style='font-size:100%; border-spacing:1em 0.25em; border-collapse: separate; '>
+                          <tr><td><h4>Review</h4></td></tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td><sup>[18]</sup> | W. Chan, R.R. Childers, L. Cai, S. Chowdhury, J.D. Crall, M.A. Cornwall, R.H. Snipe, C.A. Maier, S.C. Maunsell, G. Talavera, C. Tsai, K. Angier, V. Barve, E. Dankowicz, 
+                              J. Hinolan, M.G. Itliong, M.A.K. Naive, G. Johnson, F. Matos, … M.K. Salcedo, <b>V. Shirey</b>, K. Vermilya, …, and N.E. Pierce.
+                                    "Selection on wing size in butterflies has generated distinct morphological systems affecting flight and is correlated with migration." <i>In review.</i><br /></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td><sup>[17]</sup> | <b>V. Shirey</b>* and J. Rabinovich*.
+                                    "Climate change-induced degradation of expert range maps drawn for kissing
+                                    bugs (Reduviidae: Triatominae) and long-standing current and future sampling gaps across the Americas." <i>In review.</i><br /></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td><sup>[16]</sup> | H.C. Stevens+, E.R. Buechley, A.C. Smith, <b>V. Shirey</b>, Ç.H. Şekercioğlu, K.V. Rosenberg, F.A. La Sorte, D. Tallamy, P.P. Marra.
+                                    "Do ecological traits explain the decline of the North American avifauna?" <i>In review.</i><br /></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td><sup>[15]</sup> | M. Dietze, D. LeBauer, J. Peters, A.D. Richardson, Q. Thomas, K. Zhu, U. Bhat, S. Munch, R.F. Buzbee, M. Chen. B. Goldstein, 
+                              J.S. Guo, D. Hao, C. Jones, M. Kelly-Fair, H. Liu, C. Malmborg, N. Neupane, D. Pal, A.A. Ross, <b>V. Shirey</b>, Y. Song, M. Steen, E.A. Vance, W.M. Woelmer, J. Wynne, and L. Zachmann
+                                    "Predicting spring phenology in deciduous broadleaf forests: an open community forecast challenge." <i>In review.</i><br /></td>
+                          </tr>  
+                          <tr><td><h4>2023</h4></td></tr>
+                            <tr>
+                                <td><div data-badge-type="donut" data-doi="10.1007/s12237-023-01192-z" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                              <td><span class="__dimensions_badge_embed__" data-doi="10.1007/s12237-023-01192-z" data-style="small_circle" data-legend="never"></span></td>
+                                <td><sup>[14]</sup> | T. Rippel<sup>*</sup>, C. Minsavage-Davis<sup>*</sup>, <b>V. Shirey</b>, and G. Wimp.
+                                  "Simple machine learning with aerial imagery reveals severe loss of a salt marsh foundation species." 
+                                  <i>Estuaries and Coasts 51.</i> <a href="https://doi.org/10.1007/s12237-023-01192-z">10.1007/s12237-023-01192-z</a><br /></td>
+                              </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td><sup>[13]</sup> | A.Y. Kawahara, C. Storer, A.P.S. Carvalho, D.M. Plotkin, F. Condamine, ..., S. Schröder,
+                                  <b>V. Shirey</b>, D. Soltis, ..., and D.J. Lohman. 2023.
+                                  "A global phylogeny of butterflies reveals their evolutionary history, ancestral hosts, and biogeographic origin." <i>Nature Ecology and Evolution.</i> In press.<br /></td>
+                              </tr>
+                            <tr>
+                            <tr><td><h4>2022</h4></td></tr>
+                              <td><div data-badge-type="donut" data-doi="10.1111/1365-2435.14173" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                              <td><span class="__dimensions_badge_embed__" data-doi="10.1111/1365-2435.14173" data-style="small_circle" data-legend="never"></span>
+                              <td><sup>[12]</sup> | M. Belitz, E. Larsen, <b>V. Shirey</b>, D. Li, and R. Guralnick. 2022.
+                                "Phenological research based on natural history collections: practical guidelines and a Lepidopteran case study." <i>Functional Ecology.</i> In press. <a href="https://doi.org/10.1111/1365-2435.14173">10.1111/1365-2435.14173</a><br /></td>
+                            </tr>
+                            <tr>
+                            <td><div data-badge-type="donut" data-doi="10.1111/ecog.06287" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                              <td><span class="__dimensions_badge_embed__" data-doi="10.1111/ecog.06287" data-style="small_circle" data-legend="never"></span>
+                              <td><sup>[11]</sup> | F.X. Palacio, C. Callaghan, P. Cardoso, E.J. Hudgins, M. Jarzyna, G. Ottaviani, F. Riva, G. Roza, <b>V. Shirey</b>, and S. Mammola. 2022. "A protocol for reproducible functional
+                                diversity analyses." <i>Ecography.</i> 2022(11). <a href="https://doi.org/10.1111/ecog.06287">10.1111/ecog.06287</a> <u><b><i>Editor's Choice.</i></b></u><br /></td>
+                            </tr>
+                            <tr>
+                                <td><div data-badge-type="donut" data-doi="10.1038/s41597-022-01473-5" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                              <td><span class="__dimensions_badge_embed__" data-doi="10.1038/s41597-022-01473-5" data-style="small_circle" data-legend="never"></span>
+                              <td><sup>[10]</sup> | <b>V. Shirey</b>, E. Larsen, A. Doherty, C. Kim<sup>+</sup>, F. Al-Sulaiman<sup>+</sup>, J. Hinolan, M. Naive, M. Itliong, M. Ku, M. Belitz, G. Jeschke, V. Barve, A.Y. Kawahara, 
+                                R. Guralnick, N. Pierce, D. Lohman, and L. Ries. 2022. "LepTraits 1.0: A globally comprehensive dataset of butterfly traits." <i>Scientific Data 9(1): 1-7.</i> <a href="https://doi.org/10.1038/s41597-022-01473-5">10.1038/s41597-022-01473-5</a>
+                                | <a href="https://github.com/RiesLabGU/LepTraits">LepTraits GitHub Page</a><br /></td>
+                            </tr>
+                            <tr>
+                                <td><div data-badge-type="donut" data-doi="10.1111/2041-210X.13896" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.1111/2041-210X.13896" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[9]</sup> | <b>V. Shirey</b>, R. Khelifa, L. M'Gonigle, and L.M. Guzman. 2022.
+                                    "Occupancy-detection models with museum specimen data: promise and pitfalls." <i>Methods in Ecology and Evolution</i>. In press. 
+                                    <a href="https://doi.org/10.1111/2041-210X.13896" target="_blank">10.1111/2041-210X.13896</a><br /></td>
+                              </tr>
+                              <tr><td><h4>2021</h4></td></tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.1016/j.biocon.2021.109265" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.1016/j.biocon.2021.109265" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[8]</sup> | S.C. Mason Jr., <b>V. Shirey</b>, L. Ponisio, and J.K. Gelhaus. 2021. "Responses from bees, butterflies, and ground beetles to different fire characteristics: A global meta-analysis."
+                                    <i>Biological Conservation 261</i>. <a href="https://doi.org/10.1016/j.biocon.2021.109265" target="_blank">10.1016/j.biocon.2021.109265</a><br /></td>
+                              </tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.18473/lepi.75i3.a8" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><sup></sup><span class="__dimensions_badge_embed__" data-doi="10.18473/lepi.75i3.a8" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[7]</sup> | <b>V. Shirey</b>, A.P.S. Carvalho, and A.Y. Kawahara. 2021. "Early evidence for sexually dimorphic, ultraviolet eyespots in <i>Parnassius smintheus</i>, Doubleday, [1847]."
+                                    <i>The Journal of the Lepidopterists' Society 75 (3): 215-216</i>. <a href="https://doi.org/10.18473/lepi.75i3.a8" target="_blank">10.18473/lepi.75i3.a8</a><br /></td>
+                              </tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.1111/ele.13731" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.1111/ele.13731" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[6]</sup> | E. Larsen and <b>V. Shirey</b>. 2021. "Method matters: pitfalls in analysing phenology from occurrence records." <i>Ecology Letters (24 (6): 1287-1289</i>. <a href="https://doi.org/10.1111/ele.13731" target="_blank">10.1111/ele.13731</a><br /></td>
+                              </tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.1111/ecog.05396" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.1111/ecog.05396" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[5]</sup> | <b>V. Shirey</b>, M. Belitz, V. Barve, and R. Guralnick. 2021. "A complete inventory of North American butterfly occurrence data: narrowing data gaps but increasing bias."
+                                    <i>Ecography 44 (4): 537-547</i>. <a href="https://doi.org/10.1111/ecog.05396" target="_blank">10.1111/ecog.05396</a><br /></td>
+                              </tr>
+                              <tr><td><h4>2019</h4></td></tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.3897/BDJ.7.e47369" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.3897/BDJ.7.e47369" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[4]</sup> | <b>V. Shirey</b>, S. Seppälä, V.V. Branco, and P. Cardoso. 2019. "Current GBIF occurrence data demonstrates both promise and limitations for potential red listing of spiders."
+                                    <i>Biodiversity Data Journal 7</i>. <a href="https://doi.org/10.3897/BDJ.7.e47369" target="_blank">10.3897/BDJ.7.e47369</a><br /></td>
+                              </tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.3897/BDJ.7.e33264" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.3897/BDJ.7.e33264" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[3]</sup> | P. Cardoso, <b>V. Shirey</b>, S. Seppälä, S. Henriques, M.L. Draney, S. Foord, A.T. Gibbons, L.A. Gomez, S. Kariko, J. Malumbres-Olarte, M. Milne,
+                                    and C.J. Vink. 2019. "Globally distributed occurrences utilized in 200 spider species conservation profiles (Arachnida: Araneae)." <i>Biodiversity Data Journal 7</i>. <a href="https://doi.org/10.3897/BDJ.7.e33264" target="_blank">10.3897/BDJ.7.e33264</a><br /></td>
+                              </tr>
+                              <tr><td><h4>2018</h4></td></tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.3897/BDJ.6.e26741" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.3897/BDJ.6.e26741" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[2]</sup> | <b>V. Shirey</b>. 2018. "Visualizing natural history collection data provides insights into collection development and bias." <i>Biodiversity Data Journal 6</i>. <a href="https://doi.org/10.3897/BDJ.6.e26741" target="_blank">10.3897/BDJ.6.e26741</a><br /></td> 
+                              </tr>
+                              <tr>
+                                <td><div data-badge-type="donut" data-doi="10.3897/rio.4.e32449" data-condensed="true" data-hide-no-mentions="true" class="altmetric-embed"></div></td>
+                                <td><span class="__dimensions_badge_embed__" data-doi="10.3897/rio.4.e32449" data-style="small_circle" data-legend="never"></span>
+                                <td><sup>[1]</sup> | K. Seltmann, S. Lafia, D.L. Paul, S.A. James, D. Bloom, N. Rios, S. Ellis, U. Farrell, J. Utrup, M. Yost, E. Davis, R. Emery, G.
+                                    Motz, J. Kimmig, <b>V. Shirey</b>, E. Sandall, D. Park, C. Tyrrell, S. Thackurdeen, M. Collins, V. O’Leary, H. Prestridge, C. Evelyn,
+                                    B. Nyberg. 2018. "Georeferencing for Research Use (GRU): an integrated geospatial training paradigm for biodiversity researchers and data providers."
+                                    <i>Research Ideas and Outcomes 4</i>. <a href="https://doi.org/10.3897/rio.4.e32449" target="_blank">10.3897/rio.4.e32449</a><br /></td>
+                              </tr>
+                          </table>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <br/>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
