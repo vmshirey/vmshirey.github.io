@@ -2669,7 +2669,7 @@ input, select, textarea {
 			}
 		
 		.image.leftTeam, .image.rightTeam {
-			max-width: 40%;
+			max-width: 35%;
 		}
 
 			.image.leftTeam img, .image.rightTeam img {
@@ -2682,7 +2682,19 @@ input, select, textarea {
 			top: 0.25rem;
 		}
 
+		.image.leftTeam {
+			float: left;
+			margin: 0 1.5rem 1rem 0;
+			top: 0.25rem;
+		}
+
 		.image.right {
+			float: right;
+			margin: 0 0 1rem 1.5rem;
+			top: 0.25rem;
+		}
+
+		.image.rightTeam {
 			float: right;
 			margin: 0 0 1rem 1.5rem;
 			top: 0.25rem;
